@@ -31,9 +31,9 @@ void ShaderLight::readAddresses(GLuint shaderProgram, const GLchar *sourceName) 
     ambientColor = readAddress(shaderProgram, sourceName, ".ambientColor");
     diffuseColor = readAddress(shaderProgram, sourceName, ".diffuseColor");
     specularColor = readAddress(shaderProgram, sourceName, ".specularColor");
-    position = readAddress(shaderProgram, sourceName, ".position\0");
-    isOn = readAddress(shaderProgram, sourceName, ".isOn\0");
-    isFixed = readAddress(shaderProgram, sourceName, ".isFixed\0");
+    position = readAddress(shaderProgram, sourceName, ".position");
+    isOn = readAddress(shaderProgram, sourceName, ".isOn");
+    isFixed = readAddress(shaderProgram, sourceName, ".isFixed");
 }
 
 GLint ShaderLight::readAddress(GLuint shaderProgram,
